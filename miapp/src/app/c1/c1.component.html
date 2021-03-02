@@ -2,3 +2,7 @@
 <p>Hola {{ nombre }} </p>
 <!--  property binding -->
 <img [src]="paisaje" />
+<!-- contador y botones -->
+<p>{{ contador }}</p>
+<input type="button" value="+" (click)="incrementar()" />
+<input type="button" value="-" (click)="decrementar()" />

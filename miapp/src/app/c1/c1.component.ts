@@ -9,10 +9,16 @@ export class C1Component implements OnInit {
 
   nombre:string="pedro";
   paisaje:string="assets/paisaje.jpg";
+  contador:number=0;
 
   constructor() { }
-
+  //Aqui empiezan las funciones
   ngOnInit(): void {
   }
-
+  incrementar(){
+    this.contador++;
+  }
+  decrementar(){
+    this.contador--;
+  }
 }
