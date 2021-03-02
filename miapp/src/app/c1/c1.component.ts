@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class C1Component implements OnInit {
 
   nombre:string="pedro";
+  paisaje:string="assets/paisaje.jpg";
 
   constructor() { }
 
