@@ -1,1 +1,10 @@
-<p>c4 works!</p>
+<p *ngFor="let persona of listaPersonas" (mouseenter)="seleccionarPersona(persona)">
+
+    {{ persona.nombre }} {{ persona.apellido }} {{ persona.edad }}
+
+</p>
+
+<p>
+    La persona seleccionada es:
+    {{ seleccionada?.nombre }} {{ seleccionada?.apellido }} 
+</p>
