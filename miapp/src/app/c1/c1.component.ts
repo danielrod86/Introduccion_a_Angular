@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Persona } from '../persona';
 
 @Component({
   selector: 'app-c1',
@@ -7,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class C1Component implements OnInit {
 
-  nombre:string="pedro";
+  nombre:string="Dani";
   paisaje:string="assets/paisaje.jpg";
   contador:number=0;
+  persona:Persona;
 
   constructor() { }
-  //Aqui empiezan las funciones
   ngOnInit(): void {
+
+    this.persona=new Persona("Daniel","Rodriguez",35);
   }
+
   incrementar(){
     this.contador++;
   }
+
   decrementar(){
     this.contador--;
   }

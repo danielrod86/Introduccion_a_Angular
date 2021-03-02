@@ -1,8 +1,15 @@
 <!-- interpolacion -->
 <p>Hola {{ nombre }} </p>
 <!--  property binding -->
-<img [src]="paisaje" />
+<img [src]="paisaje" width="300px" />
 <!-- contador y botones -->
 <p>{{ contador }}</p>
 <input type="button" value="+" (click)="incrementar()" />
 <input type="button" value="-" (click)="decrementar()" />
+
+
+<ul>
+    <li> {{ persona.nombre }} </li>
+    <li> {{ persona.apellido }} </li>
+    <li> {{ persona.edad }} </li>
+</ul>
